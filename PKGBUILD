@@ -3,13 +3,12 @@
 pkgname=csess-bin
 _pkgname=csess
 pkgver=0.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="List, fork and move Claude Code sessions between directories (prebuilt binary)"
 arch=('x86_64')
 url="https://github.com/rafiibrahim8/csess"
 license=('MIT')
 depends=() # static, pure-Go binary
-optdepends=('claude-code: the Claude Code CLI whose sessions this manages')
 provides=("${_pkgname}")
 conflicts=("${_pkgname}")
 options=(!strip !debug) # release builds are already stripped (-s -w)
