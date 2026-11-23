@@ -1,0 +1,5 @@
+[csess-bin]
+source = "github"
+github = "rafiibrahim8/csess"
+use_latest_release = true
+prefix = "v"

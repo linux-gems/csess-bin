@@ -1,0 +1,16 @@
+pkgbase = csess-bin
+	pkgdesc = List, fork and move Claude Code sessions between directories (prebuilt binary)
+	pkgver = 0.1.0
+	pkgrel = 1
+	url = https://github.com/rafiibrahim8/csess
+	arch = x86_64
+	license = MIT
+	optdepends = claude-code: the Claude Code CLI whose sessions this manages
+	provides = csess
+	conflicts = csess
+	options = !strip
+	options = !debug
+	source = csess-0.1.0-linux-x86_64.tar.gz::https://github.com/rafiibrahim8/csess/releases/download/v0.1.0/csess-v0.1.0-linux-x86_64.tar.gz
+	sha256sums = ffec60411a1fa1fcf15701808eb6693cc4366c7341b5b6287dcf85a971424cb7
+
+pkgname = csess-bin
