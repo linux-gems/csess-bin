@@ -2,8 +2,8 @@
 
 pkgname=csess-bin
 _pkgname=csess
-pkgver=0.1.0
-pkgrel=2
+pkgver=0.1.1
+pkgrel=1
 pkgdesc="List, fork and move Claude Code sessions between directories (prebuilt binary)"
 arch=('x86_64')
 url="https://github.com/rafiibrahim8/csess"
@@ -13,7 +13,7 @@ provides=("${_pkgname}")
 conflicts=("${_pkgname}")
 options=(!strip !debug) # release builds are already stripped (-s -w)
 source=("${_pkgname}-${pkgver}-linux-x86_64.tar.gz::${url}/releases/download/v${pkgver}/${_pkgname}-v${pkgver}-linux-x86_64.tar.gz")
-sha256sums=('ffec60411a1fa1fcf15701808eb6693cc4366c7341b5b6287dcf85a971424cb7')
+sha256sums=('05c29001cb90237f0616e78c7137326c5785905f20df5ddfca1e434dada5da8d')
 
 package() {
   cd "${_pkgname}-v${pkgver}-linux-x86_64"
